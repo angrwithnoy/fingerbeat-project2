@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background: #f0f0f0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.phone-frame {
+  width: 393px;
+  height: 852px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-circle {
+  width: 294px;
+  height: 294px;
+  border-radius: 50%;
+  background: black;
+  position: relative;
+}
+
+.pad {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pad:active,
+.pad.active {
+  background: #ccc;
+  transform: scale(0.95);
+}
